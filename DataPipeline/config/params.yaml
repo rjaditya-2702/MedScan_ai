@@ -1,0 +1,19 @@
+# Pipeline parameters
+
+project:
+  id: medscanai-476203
+  region: us-central1
+
+validate:
+  min_word_count: 100
+  max_word_count: 50000
+  anomaly_threshold: 50
+  drift_threshold: 0.1
+
+chunk:
+  size: 512
+  overlap: 128
+
+embed:
+  model: BAAI/llm-embedder
+  batch_size: 32
